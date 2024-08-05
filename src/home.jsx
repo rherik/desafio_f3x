@@ -6,7 +6,7 @@ import Index from './Components/Index/Index'
 const App = () => {
   return (
     <>
-    <div className='h-screen space-y-20 bg-black'>
+    <div className='h-screen pt-14 space-y-20 bg-black'>
       <Navbar />
       <Index />
       <Footer />

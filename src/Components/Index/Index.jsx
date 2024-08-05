@@ -1,7 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Aimagem from '../../assets/Prancheta.png'
 
+
 function Index() {
+  const [count, setCount] = useState(0);
+
+  const handleIncrement = () => {
+    setCount(count + 1);
+  };
+
+  const handleDecrement = () => {
+    if (count === 0){
+      setCount(0)
+    } else {
+      setCount(count - 1);
+    }
+  };
+
   return (
     <main className='flex flex-row justify-around bg-black static p-2'>
       <div className='h-[880px] w-[479px] left-2'>
@@ -19,16 +34,17 @@ function Index() {
          dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500">
           <button 
           type='button' 
+          onClick={handleDecrement}
           className="select-none rounded-lg bg-green-500 py-3 w-full text-center align-middle font-sans text-xs 
           font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg
           hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none 
           disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
           >-
           </button>
-            <p className='flex items-center px-28'>1</p>
+            <p className='flex items-center px-28'>{count}</p>
             <button 
-          type='button' 
-          id='mais'
+          type='button'
+          onClick={handleIncrement}
           className="select-none rounded-lg bg-green-500 py-3 w-full text-center align-middle font-sans text-xs 
           font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg
           hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none 
@@ -36,7 +52,6 @@ function Index() {
           >+
           </button>
         </div>
-  
         <button
             className="select-none rounded-lg bg-green-500 py-3 w-full text-center align-middle font-sans text-xs 
             font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg
@@ -45,6 +60,7 @@ function Index() {
             type="button">
             Comprar agora
           </button>
+          <a href="/cadastro">
           <button
             className="select-none rounded-lg border border-gray-900 py-3 w-full text-center align-middle 
             font-sans text-xs font-bold uppercase text-green-500 transition-all hover:opacity-75 focus:ring
@@ -53,6 +69,7 @@ function Index() {
             type="button">
             Ver meus números
           </button>
+          </a>
       </aside>
     </main>
   )

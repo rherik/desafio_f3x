@@ -1,21 +1,21 @@
 import React from 'react'
 import Aimagem from '../../assets/Prancheta.png'
 
-function Index() {
+function Cadastro() {
   return (
     <main className='flex flex-col-2 justify-around bg-black static p-2'>
-      <div className='h-[880px] w-[479px] inset-y-0 left-2'>
+      <div className='h-[880px] w-[479px]'>
           <img src={Aimagem} alt="" />
       </div>
 
-      <aside className='w-72 static right-2 py-4'>
-        <div className='flex flex-row text-3xl py-2 pl-2'>
+      <aside className='w-72 static py-4 space-y-4'>
+        <div className='flex flex-row space-x-2 text-3xl'>
           <p className='text-white'>Finalizar</p> 
           <p className='font-bold text-green-500'>Compra</p>
         </div>
         <div className="block w-full p-2 bg-black text-gray-900 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500">
-            <p>Quantidade:</p>
-            <p>Preço:</p>
+            <p>Quantidade: {}</p>
+            <p>Preço: {}</p>
         </div>
         <form className='max-w-sm mx-aut' action="">
           <div className="mb-5">
@@ -52,4 +52,4 @@ function Index() {
   )
 }
 
-export default Index
+export default Cadastro
