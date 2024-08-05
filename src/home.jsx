@@ -1,14 +1,14 @@
 import React from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import Footer from './Components/Footer/Footer'
-import Cadastro from './Components/Cadastro/Cadastro'
+import Index from './Components/Index/Index'
 
 const App = () => {
   return (
     <>
     <div className='h-screen space-y-20 bg-black'>
       <Navbar />
-      <Cadastro />
+      <Index />
       <Footer />
     </div>
     </>

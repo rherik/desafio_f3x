@@ -12,7 +12,7 @@ const Navbar = () => {
 
             <nav className="navbar flex">
                 <a href="/" className='relative text-[18px] text-[#f6f8f8] font-medium ml-10 hover:text-[#008261]'>Home</a>
-                <a href="/" className='relative text-[18px] text-[#f6f8f8] font-medium ml-10 hover:text-[#008261]'>Meus números</a>
+                <a href="/cadastro" className='relative text-[18px] text-[#f6f8f8] font-medium ml-10 hover:text-[#008261]'>Meus números</a>
                 <a href="/" className='relative text-[18px] text-[#f6f8f8] font-medium ml-10 hover:text-[#008261]'>Termos</a>
             </nav>
         </header>

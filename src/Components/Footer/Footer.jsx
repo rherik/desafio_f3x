@@ -17,8 +17,8 @@ const Footer = () => {
             </p>
         </div>
 
-        <form action="" className='flex place-self-end p-4'>
-            <div className="mb-5">
+        <form action="" className='flex p-4'>
+            <div className="mb-5 right-1">
                 <input type="text" placeholder='Digite seu e-mail' className='' />
                 <button className='bg-teal-600'></button>
             </div>
